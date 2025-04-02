@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #75aaff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #0061a8;
+}
+
+footer {
+    background-color: #75aaff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Estilos de navegación */
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    background-color: #f7c300;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #f7a400;
+    transform: scale(1.05);
+}
+
+a:active {
+    background-color: #c77d00;
+    transform: scale(1.1);
+}
+
+/* Estilos de la sección "Sobre mí" */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilo para los botones "Relacionados" */
+.button-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la imagen */
+.image-container {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.image-container img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
