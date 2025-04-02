@@ -23,7 +23,7 @@ header p {
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em; /* Tamaño ajustado */
 }
 
 h2 {
@@ -42,7 +42,7 @@ footer {
 nav {
     margin: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* En móviles, los enlaces se apilan */
     align-items: center;
 }
 
@@ -77,7 +77,7 @@ a:active {
     transform: scale(1.1);
 }
 
-/* Estilos de la sección "Sobre mí" */
+/* Estilos de la sección */
 section {
     padding: 20px;
     margin: 20px;
@@ -91,22 +91,42 @@ section p {
     line-height: 1.6;
 }
 
-/* Estilo para los botones "Relacionados" */
-.button-list {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Estilos para la imagen */
+/* Imagen */
 .image-container {
-    position: absolute;
-    top: 40%;
-    right: 20px;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .image-container img {
-    width: 500px;
+    width: 90%; /* Se ajusta al ancho del contenedor */
+    max-width: 500px; /* No crecerá más de este tamaño */
     height: auto;
     border-radius: 10px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 100%; /* Ocupa toda la pantalla */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en móviles */
+    }
+
+    header p {
+        font-size: 16px;
+    }
 }
